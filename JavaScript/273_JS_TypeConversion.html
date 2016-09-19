@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tuition Fees Calculator</title>
+<script type="text/javascript" src="273_JS_TypeConversions.js"></script>
+<style>
+label{
+	display: block;	
+	line-height: 1;
+	margin-left: 10px;
+}
+</style>
+</head>
+<body>
+<form>
+Total Credits Enrolled in $:<label><input type = "text" name = "creditEnrolled"/></label><br>
+Annual Fees per Credit in $:<label><input type = "text" name = "feesPerCredit"/></label><br>
+Dining Fees Per Semester in $:<label><input type = "text" name = "diningCharges"/></label><br>
+Annual Parking Fees in $:<label><input type = "text" name = "parkingCharges"/></label><br>
+Total Annual Fees in $:<label><input type = "text" name = "totalFees"/></label><br>
+<input type="button" name="fee" onclick ="feeCalculator()" value="Calculate Fees"/>
+</form>
+
+</body>
+</html>

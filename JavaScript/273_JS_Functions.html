@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Expenditure Calculator</title>
+<script type="text/javascript" src="273_JS_Function.js"></script>
+
+<style>
+label{
+	display: block;	
+	line-height: 1.5;
+	margin-left: 10px;
+}
+.input{
+	position: fixed;
+	margin-left: 100px; 
+	width: 15em; 
+	left: 80px;
+	text-align: left;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Calculate your weekly expenditure</h1>
+
+<form>
+<label>$ spent on Monday:<input type="text" name="monday" class="input"/><br></label>
+<label>$ spent on Tuesday:<input type="text" name="tuesday" class="input"/><br></label>
+<label>$ spent on Wednesday:<input type="text" name="wednesday" class="input"/><br></label>
+<label>$ spent on Thursday:<input type="text" name="thursday" class="input"/><br></label>
+<label>$ spent on Friday:<input type="text" name="friday" class="input"/><br></label>
+<label>$ spent on Saturday:<input type="text" name="saturday" class="input"/><br></label>
+<label>$ spent on Sunday:<input type="text" name="sunday" class="input"/><br></label>
+<label>Total $ spent in Week:<input type="text" name="result" class="input"/><br></label>
+<br>
+<input type="button" name="totalExpenditure" value="Weekly Expenditure" onclick="document.getElementsByName('result')[0].value = expenditure(document.getElementsByName('monday')[0].value,document.getElementsByName('tuesday')[0].value,document.getElementsByName('wednesday')[0].value,document.getElementsByName('thursday')[0].value,document.getElementsByName('friday')[0].value,document.getElementsByName('saturday')[0].value,document.getElementsByName('sunday')[0].value)"/>
+</form>
+
+</body>
+</html>

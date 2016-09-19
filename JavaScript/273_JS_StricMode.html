@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Temperature Conversion</title>
+<script type="text/javascript" src="273_JS_StrictMode.js"></script>
+<style>
+label{
+	display: block;	
+	line-height: 1;
+	margin-left: 10px;
+}
+.input{
+	position: fixed;
+	margin-left: 20px; 
+	width: 15em; 
+	left: 80px;
+	text-align: left;
+}
+</style>
+</head>
+
+<body>
+<p>Temperature Conversion</p>
+
+<form>
+<label>Fahrenheit: <input type="text" name="tempfahren" class="input" /></label><br>
+<label>Celsius: <input type="text" name="tempCelsius" class="input"/></label><br>
+
+<input type="button" name="notstrct" value="Non-Strict Mode" onclick="withoutStrict()"/>
+<input type="button" name="strct" value="Strict Mode" onclick="withStrict()"/>
+
+</form>
+
+</body>
+</html>

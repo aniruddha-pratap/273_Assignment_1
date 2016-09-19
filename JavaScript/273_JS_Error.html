@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Simple Calculations</title>
+
+<script type="text/javascript" src="273_JS_Error.js"></script>
+
+<style>
+label{
+	display: block;	
+	line-height: 1.5;
+	margin-left: 10px;
+}
+.input{
+	position: fixed;
+	margin-left: 100px; 
+	width: 15em; 
+	left: 80px;
+	text-align: left;
+}
+</style>
+
+</head>
+
+<body>
+
+<form>
+<label>First Number: <input type="text" name="first" class="input"/></label><br>
+<label>Second Number: <input type="text" name="second" class="input"/></label><br>
+<br>
+<input type="button" name="multiple" value="*" onclick="multiply(document.getElementsByName('first')[0].value,document.getElementsByName('second')[0].value)"/>
+<input type="button" name="divid" value="/" onclick="divide(document.getElementsByName('first')[0].value,document.getElementsByName('second')[0].value)"/>
+<input type="button" name="operationAdd" value="+" onclick="add(document.getElementsByName('first')[0].value,document.getElementsByName('second')[0].value)"/>
+<input type="button" name="operationSubtract" value="-" onclick="subtract(document.getElementsByName('first')[0].value,document.getElementsByName('second')[0].value)"/>
+</form>
+
+<p id="result"></p>
+
+</body>
+
+</html>
+

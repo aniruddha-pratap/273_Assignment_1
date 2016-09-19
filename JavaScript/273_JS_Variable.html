@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CMPE 273 Assignment</title>
+<script type="text/javascript">
+function favColor(){
+	var myFav = document.getElementsByName('color')[0].value;
+	document.write("My favourite color is: " + myFav);
+}
+</script>
+</head>
+<body>
+<form>
+Enter your favorite color:<input type="text" name="color"/>
+<input type="button" onclick="favColor()" value="Favourite Color"/>
+</form>
+</body>
+</html>

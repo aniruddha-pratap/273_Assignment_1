@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Wallpapers</title>
+<style type="text/css">
+input{
+color: white;
+}
+</style>
+</head>
+<body>
+<h1>Image Fun</h1>
+<form>
+Choose :<input type="radio" name="picture" id="football" value="football"> Football
+<input type="radio" name="picture" id="pistol" value="pistol"> Pistol
+<input type="radio" name="picture" id="beach" value="beach"> Beach
+<input type="radio" name="picture" id="mountains" value="mountains"> Mountains
+<input type="radio" name="picture" id="car" value="car"> Car
+<input type="button" name="choose" onclick="chooseImage()" value="Change Image"/>
+<p id="result"></p>
+</form>
+<script>
+function chooseImage()
+{
+	if(document.getElementById('football').checked)
+	{	
+		document.body.style.backgroundImage = "url(football.jpg)";
+		document.body.style.backgroundSize = "cover";
+		document.body.style.backgroundRepeat = "no-repeat";
+	}
+	else if(document.getElementById('pistol').checked)
+	{
+		document.body.style.backgroundImage = "url(pistol.jpg)";
+		document.body.style.backgroundSize = "cover";
+		document.body.style.backgroundRepeat = "no-repeat";
+	}
+	else if(document.getElementById('beach').checked)
+	{
+		document.body.style.backgroundImage = "url(beach.jpg)";
+		document.body.style.backgroundSize = "cover";
+		document.body.style.backgroundRepeat = "no-repeat";
+	}
+	else if(document.getElementById('mountains').checked)
+	{
+		document.body.style.backgroundImage = "url(mountains.jpg)";
+		document.body.style.backgroundSize = "cover";
+		document.body.style.backgroundRepeat = "no-repeat";
+	}
+	else if(document.getElementById('car').checked)
+	{
+		document.body.style.backgroundImage = "url(car.png)";
+		document.body.style.backgroundSize = "cover";
+		document.body.style.backgroundRepeat = "no-repeat";
+	}
+}	
+</script>
+</body>
+</html>

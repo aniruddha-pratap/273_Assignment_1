@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Regular Expressions Example</title>
+
+<script type="text/javascript" src="273_JS_RegularExpressions.js"></script>
+
+<style>
+label{
+	display: block;	
+	line-height: 1.5;
+	margin-left: 10px;
+}
+.input{
+	position: fixed;
+	margin-left: 100px; 
+	width: 15em; 
+	left: 80px;
+	text-align: left;
+}
+</style>
+
+</head>
+
+<body>
+
+<form name="searchReplaceText">
+<label>Enter your text here: <textarea name="textEntered" rows="10" cols="40"></textarea></label><br>
+<input type="button" name="searchTex" value="Search" onclick="searchText()"/> Search text: <input type="text" name="searchThis"/> <br>
+<input type="button" name="replaceTex" value="Replace" onclick="replaceText()"/> Replace with: <input type="text" name="replacebyThis"/>
+</form>
+
+<p id="result"></p>
+
+</body>
+
+</html>
+

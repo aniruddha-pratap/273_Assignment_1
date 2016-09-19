@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Example of Some JavaScript Events.</title>
+<script type="text/javascript" src="273_JS_Event.js"></script>
+<style>
+label{
+	display: block;	
+	line-height: 1.5;
+	margin-left: 10px;
+}
+
+body{
+	margin: 0;
+	background-image: url(car.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #cccccc;
+}
+
+.input{
+	position: fixed;
+	margin-left: 30px; 
+	width: 15em; 
+	left: 80px;
+	text-align: left;
+}
+</style>
+</head>
+
+<body>
+
+<form>
+
+<label>Make: <input type="text" name="vehicle_make" class="input" onFocus="eventOnFocus(this)" onchange="eventOnChange(this)"/><br></label>
+<label>Model: <input type="text" name="vehicle_model" class="input" onFocus="eventOnFocus(this)" onchange="eventOnChange(this)"/><br></label>
+<label>Year: <input type="text" name="vehicle_year" class="input" onFocus="eventOnFocus(this)" onchange="eventOnChange(this)"/><br></label>
+<label>Mileage: <input type="text" name="vehicle_mileage" class="input" onFocus="eventOnFocus(this)" onchange="eventOnChange(this)"/><br></label>
+<input type="button" name="Details" value="Details" style="width:70px" onmouseover="eventOnMouseOver(this)" onmouseout="eventOnMouseOut(this)" onclick="displayInfo()"/>
+
+<p id="result" style="color: white"> </p>
+
+</form>
+
+</body>
+
+</html>

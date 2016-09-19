@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Shopping Cart</title>
+<script type="text/javascript" src="273_HTML_LocalStorage.js"></script>
+</head>
+<body>
+	<h1>Buy Here!</h1>
+	<input type="button" value="Show Cart" onclick="showCart()">
+	<input type="button" value="Clear Cart" onclick="clearCart()">
+	<form>
+		Item:<input type="text" name="itemName"/>
+		Quantity:<input type="text" name="quant"/>
+		<br>
+		<input type="button" value="Add"   onclick="AddtoCart()"> 
+		<input type="button" value="Modify" onclick="ModifyinCart()"> 
+		<input type="button" value="Remove" onclick="RemovefromCart()">
+		<br>
+		<p></p>
+		<p id="showCart"></p>
+	</form>
+</body>
+</html>

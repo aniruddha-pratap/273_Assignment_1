@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<button onclick="fetchMyLocation()">Check Location</button>
+<p id="location"></p>
+<script>
+function fetchMyLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(myLocation);
+    } 
+}
+function myLocation(position) {
+	document.getElementById('location').innerHTML = "My Latitude: " + position.coords.latitude +
+    "<br>My Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>
